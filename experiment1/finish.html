@@ -3,9 +3,5 @@
   const baselineSpeed = Number(localStorage.getItem("baselineSpeed"));
   const pattern = localStorage.getItem("pattern");
 
-  firebase.firestore().collection("logs").add({
-    baselineSpeed: baselineSpeed,
-    pattern: pattern,
-    timestamp: Date.now()
-  });
+  sendLog(baselineSpeed, pattern);
 </script>
