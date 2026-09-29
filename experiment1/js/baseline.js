@@ -1,10 +1,17 @@
-let lastY = window.scrollY;
-let lastTime = Date.now();
 let baselineSpeed = 0;
+let lastY = null;
+let lastTime = null;
 
 window.addEventListener("scroll", () => {
   const now = Date.now();
   const currentY = window.scrollY;
+
+  // 初回スクロール時に計測開始
+  if (lastY === null) {
+    lastY = currentY;
+    lastTime = now;
+    return;
+  }
 
   const deltaY = Math.abs(currentY - lastY);
   const deltaTime = now - lastTime;
