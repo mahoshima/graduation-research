@@ -1,5 +1,11 @@
-firebase.firestore().collection("logs").add({
-  baselineSpeed: Number(localStorage.getItem("baselineSpeed")),
-  pattern: localStorage.getItem("pattern"),
-  timestamp: Date.now()
-});
+<script src="js/firebase.js"></script>
+<script>
+  const baselineSpeed = Number(localStorage.getItem("baselineSpeed"));
+  const pattern = localStorage.getItem("pattern");
+
+  firebase.firestore().collection("logs").add({
+    baselineSpeed: baselineSpeed,
+    pattern: pattern,
+    timestamp: Date.now()
+  });
+</script>
