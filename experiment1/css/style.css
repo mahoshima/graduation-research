@@ -114,13 +114,12 @@ footer {
 
 
 .scroll-highlight {
-  color: #333;
-  font-weight: bold;
+  color: black;
   transition: color 0.2s ease;
 }
 
 .scroll-highlight.active {
-  color: #D00000; /* 赤 */
+  color: red !important;
 }
 
 
