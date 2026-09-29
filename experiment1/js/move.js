@@ -1,3 +1,11 @@
+function goToA1() {
+  window.location.href = "./A-1.html";
+}
+
+function goToB1() {
+  window.location.href = "./B-1.html";
+}
+
 function goToA3() {
   window.location.href = "./A-3.html";
 }
