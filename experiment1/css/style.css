@@ -38,18 +38,9 @@ html {
      font-size: 16px;
      line-height: 1.7;
 }
-
 .highlight {
      color: #D00000;
 }
-.scroll-highlight {
-     color: black;
-     transition: color 0.2s ease;
-}
-.scroll-highlight.active {
-     color: #D00000;
-}
-
 #scrollResult {
      margin-top:18px;
      font-size:16px;
@@ -62,20 +53,15 @@ html {
      margin-bottom: 6px;
      font-size:18px;
 }
-#part-i {
-     font-size:18px;
-}
-
 .formLink {
      margin-top: 12px;
      font-size:18px;
 }
-.part-next {
-     margin-bottom: 14px;
-     font-size:18px;
-}
 .comment {
      margin-bottom: 14px;
+}
+#bottun {
+    padding: 12px;
 }
 
 /* footer */
