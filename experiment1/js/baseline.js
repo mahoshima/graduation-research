@@ -17,3 +17,13 @@ window.addEventListener("scroll", () => {
   lastY = currentY;
   lastTime = now;
 });
+
+function finishBaselineA() {
+  localStorage.setItem("baselineSpeed", baselineSpeed);
+  location.href = "A-2.html";
+}
+
+function finishBaselineB() {
+  localStorage.setItem("baselineSpeed", baselineSpeed);
+  location.href = "B-2.html";
+}
