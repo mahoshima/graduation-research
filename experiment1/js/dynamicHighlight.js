@@ -1,5 +1,7 @@
+// 条件1で記録した baselineSpeed を読み込む
 const baseline = Number(localStorage.getItem("baselineSpeed"));
 
+// スクロール速度計測用
 let lastY = window.scrollY;
 let lastTime = Date.now();
 
@@ -10,7 +12,8 @@ window.addEventListener("scroll", () => {
   const deltaY = Math.abs(currentY - lastY);
   const deltaTime = now - lastTime;
 
-  const speed = deltaY / deltaTime; // px/ms
+  // px/ms のスクロール速度
+  const speed = deltaY / deltaTime;
 
   // baseline より速くスクロールしたら赤にする
   if (speed > baseline) {
