@@ -1,1 +1,134 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500&family=Noto+Sans+JP:wght@700&family=Oswald:wght@700&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-user-select: none;
+  user-select: none;
+}
+html {
+    font-family: 'Zen Old Mincho', 'Oswald', 'Noto Sans JP', 'sans-serif';
+    overflow-y: scroll;
+}
+
+/* header */
+
+/* main */
+.main_inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+.main_caution_note, .main_title, .main_detail {
+  width: 76%;
+}
+.main_caution_note {
+     font-size: 15px;
+     padding-top: 12px;
+     padding-bottom: 20px;
+}
+.main_title {
+     font-size: 24px;
+}
+.main_detail {
+     font-size: 16px;
+     line-height: 1.7;
+}
+
+.highlight {
+     color: #D00000;
+}
+.scroll-highlight {
+     color: black;
+     transition: color 0.2s ease;
+}
+.scroll-highlight.active {
+     color: #D00000;
+}
+
+#scrollResult {
+     margin-top:18px;
+     font-size:16px;
+}
+.caution_note {
+     font-size: 15px;
+}
+#formLink {
+     display:none;
+     margin-bottom: 6px;
+     font-size:18px;
+}
+#part-i {
+     font-size:18px;
+}
+
+.formLink {
+     margin-top: 12px;
+     font-size:18px;
+}
+.part-next {
+     margin-bottom: 14px;
+     font-size:18px;
+}
+.comment {
+     margin-bottom: 14px;
+}
+
+/* footer */
+.footer {
+     width: 100%;
+}
+.footer_inner {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     margin: auto;
+     padding-top: 26px;
+     padding-bottom: 28px;
+}
+.footer_list {
+     display: flex;
+     width: 84%;
+     margin: auto;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 4px;
+}
+.footer_item {
+     font-size: 15px;
+}
+.footer_copyright {
+     display: flex;
+     justify-content: center;
+     font-size: 14px;
+}
+
+
+
+body {
+     background-color: white;
+}
+
+footer {
+     background-color: rgb(226, 226, 226);
+}
+
+
+
+
+.scroll-highlight {
+  color: #333;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.scroll-highlight.active {
+  color: #D00000; /* 赤 */
+}
+
+
 
