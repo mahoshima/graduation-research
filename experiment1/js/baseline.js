@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
   const deltaTime = now - lastTime;
 
   // ページ移動時のスクロール（高速すぎる）を除外
-  if (deltaTime < 15) {
+  if (deltaTime < 5) {
     lastY = currentY;
     lastTime = now;
     return;
