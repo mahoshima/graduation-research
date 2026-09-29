@@ -1,7 +1,33 @@
-<script src="js/firebase.js"></script>
-<script>
-  const baselineSpeed = Number(localStorage.getItem("baselineSpeed"));
-  const pattern = localStorage.getItem("pattern");
+<!DOCTYPE html>
+<html lang="ja" class="webp webp-alpha webp-animation webp-lossless">
 
-  sendLog(baselineSpeed, pattern);
-</script>
+<head>
+   <title>卒業研究実験１</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- CSS -->
+   <link rel="stylesheet" type="text/css" href="./css/reset.css">
+   <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+   <!-- font data -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500&family=Noto+Sans+JP:wght@700&family=Oswald:wght@700&display=swap">
+
+   <script src="js/firebase.js"></script>
+</head>
+
+
+<body>
+  
+  <h2>条件1で記録したスクロール速度</h2>
+  <p id="baselineValue"></p>
+  
+  <script>
+    // baseline.js で保存した値を読み込む
+    const baselineSpeed = Number(localStorage.getItem("baselineSpeed"));
+    // 表示
+    document.getElementById("baselineValue").textContent = baselineSpeed + " px/ms";
+  </script>
+
+</body>
+</html>
