@@ -1,1 +1,10 @@
-
+html, body, header, main, footer, div, a, ul, li, button, h1, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  display: block;
+}
