@@ -43,17 +43,16 @@
    </footer>
    
    <!-- js -->
+   <p id="baselineValue"></p>
+
+   <script>
+     const baselineSpeed = Number(localStorage.getItem("baselineSpeed"));
+     document.getElementById("baselineValue").textContent = baselineSpeed + " px/ms";
+   </script>
+   
    <script src="./js/baseline.js"></script>
    <script src="./js/dynamicHighlight.js"></script>
-  
-  <script>
-    // baseline.js で保存した値を読み込む
-    const baselineSpeed = Number(localStorage.getItem("baselineSpeed"));
-    // 表示
-    document.getElementById("baselineValue").textContent = baselineSpeed + " px/ms";
-  </script>
-
-  <script src="./js/firebase.js"></script>
+   <script src="./js/firebase.js"></script>
 
 </body>
 </html>
