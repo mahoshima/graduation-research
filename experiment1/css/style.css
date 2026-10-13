@@ -33,15 +33,14 @@ html {
 }
 .main_title {
      font-size: 24px;
-     margin-bottom: 3px;
+     margin-bottom: 8px;
 }
 .main_detail {
      font-size: 16px;
      line-height: 1.7;
-     margin-bottom: 5px;
 }
 .part {
-     margin-bottom: 8px;
+     margin-bottom: 5px;
 }
 .highlight {
      color: #D00000;
