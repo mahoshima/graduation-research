@@ -29,10 +29,10 @@ html {
 .main_caution_note {
      font-size: 15px;
      padding-top: 12px;
-     padding-bottom: 20px;
 }
 .main_title {
      font-size: 24px;
+     margin-top: 20px;
      margin-bottom: 10px;
 }
 .main_detail {
