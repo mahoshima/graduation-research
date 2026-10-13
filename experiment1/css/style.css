@@ -63,7 +63,9 @@ html {
      margin-bottom: 14px;
 }
 button {
+    margin: 20px;
     padding: 12px;
+    width: 86%;
 }
 
 /* footer */
