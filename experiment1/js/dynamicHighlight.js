@@ -6,12 +6,20 @@ console.log("baseline:", baseline);  // ← baseline の値を確認
 let lastY = window.scrollY;
 let lastTime = Date.now();
 
+//　一度でも赤くなったかを記録
+let isHighlighted = false;
+
 window.addEventListener("scroll", () => {
+  // 既に赤くなっている場合は、これ以降の速度計算や判定をスキップ
+  if (isHighlighted) return;
+  
   const now = Date.now();
   const currentY = window.scrollY;
 
   const deltaY = Math.abs(currentY - lastY);
   const deltaTime = now - lastTime;
+
+  if (deltaTime === 0) return;
 
   // px/ms のスクロール速度
   const speed = deltaY / deltaTime;
@@ -23,10 +31,7 @@ window.addEventListener("scroll", () => {
     document.querySelectorAll('.scroll-highlight').forEach(el => {
       el.classList.add('active');
     });
-  } else {
-    document.querySelectorAll('.scroll-highlight').forEach(el => {
-      el.classList.remove('active');
-    });
+    isHighlighted = true;
   }
 
   lastY = currentY;
