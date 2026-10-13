@@ -40,6 +40,9 @@ html {
      line-height: 1.7;
      margin-botton: 5px;
 }
+.part {
+     margin-botton: 8px;
+}
 .highlight {
      color: #D00000;
 }
