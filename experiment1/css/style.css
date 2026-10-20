@@ -71,7 +71,8 @@ button {
     width: 91%;
 }
 #finishbutton {
-    width: 68%;
+    width: 64%;
+    margin-top: 38px;
 }
 
 /* footer */
