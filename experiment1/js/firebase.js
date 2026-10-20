@@ -32,10 +32,13 @@ function sendLog(data) {
 function saveAndOpenForm() {
 
   sendLog({
-    participantId:
-      localStorage.getItem("participantId"),
-    
-    "check": "maho"
+  participantId:
+    localStorage.getItem("participantId"),
+
+  experimentPattern:
+    localStorage.getItem("experimentPattern"),
+
+  check: "iphone2"
 });
 
   // Googleフォームを開く
