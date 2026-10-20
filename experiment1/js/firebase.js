@@ -8,23 +8,56 @@ const firebaseConfig = {
   appId: "YOUR_APP_ID"
 };
 
-// 初期化
+// Firebase初期化
 firebase.initializeApp(firebaseConfig);
 
-// Firestore 取得
+// Firestore取得
 const db = firebase.firestore();
 
-// baselineSpeed と pattern を送信する関数
-function sendLog(baselineSpeed, pattern) {
-  db.collection("logs").add({
-    baselineSpeed: baselineSpeed,
-    pattern: pattern,
-    timestamp: Date.now()
-  })
-  .then(() => {
-    console.log("ログ送信完了");
-  })
-  .catch((error) => {
-    console.error("ログ送信エラー:", error);
+
+// Firebaseへ保存
+function sendLog(data) {
+
+  db.collection("experiment1").add(data)
+
+    .then(() => {
+      console.log("ログ送信完了");
+    })
+
+    .catch((error) => {
+      console.error("ログ送信エラー:", error);
+    });
+}
+
+
+// Googleフォームへ進むボタン用
+function saveAndOpenForm() {
+
+  sendLog({
+
+    participantId:
+      localStorage.getItem("participantId"),
+
+    experimentPattern:
+      localStorage.getItem("experimentPattern"),
+
+    condition1Time:
+      localStorage.getItem("condition1Time"),
+
+    condition2Time:
+      localStorage.getItem("condition2Time"),
+
+    condition3Time:
+      localStorage.getItem("condition3Time"),
+
+    baselineSpeed:
+      localStorage.getItem("baselineSpeed")
+
   });
+
+  // Googleフォームを開く
+  window.open(
+    "https://forms.gle/Vg9LYjgoJjBTpZ489",
+    "_blank"
+  );
 }
