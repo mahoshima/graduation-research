@@ -61,9 +61,10 @@ function saveAndOpenForm() {
 
   // 何秒後に強調が発生したか
   highlightTriggerTime:
-    localStorage.getItem("highlightTriggerTime")
+    localStorage.getItem("highlightTriggerTime"),
 
   check: "stepA"
+
 });
 
   // Googleフォームを開く
