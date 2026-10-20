@@ -33,7 +33,7 @@ function goToB3() {
     Math.round((Date.now() - start) / 1000);
 
   localStorage.setItem(
-    "condition2Time",
+    "condition3Time",
     elapsed
   );
   
