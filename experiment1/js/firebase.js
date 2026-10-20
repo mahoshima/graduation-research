@@ -38,7 +38,7 @@ function saveAndOpenForm() {
   experimentPattern:
     localStorage.getItem("experimentPattern"),
 
-  check: "iphone2"
+  check: "step2"
 });
 
   // Googleフォームを開く
