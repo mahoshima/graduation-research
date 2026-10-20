@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja" class="webp webp-alpha webp-animation webp-lossless">
 
+<head>
+   <title>卒業研究実験１</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- CSS -->
+   <link rel="stylesheet" type="text/css" href="./css/reset.css">
+   <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+   <!-- font data -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500&family=Noto+Sans+JP:wght@700&family=Oswald:wght@700&display=swap">
+
+</head>
+
+
+<body>
+
+   <header class="header">
+      <div class="header_inner">
+
+      </div>
+   </header>
+
+   <main class="main">
+      <div class="main_inner">
+
+         <div class="main_caution_note">
+            <p>
+               読了後にテスト＆アンケート内容のご記入にご協力ください。<br>
+               ※本実験はスマートフォン想定しています。
+            </p>
+         </div>
+
+         <div class="main_title">
+            ご協力のお願い
+         </div>
+
+         <div class="main_detail">
+            <div class="part">
+              【研究目的】<br>
+              本研究は、Web上の教材ページの見え方や強調の仕方がページの読み方や理解度にどのような影響を与えるかを調べることを目的としています。
+            </div>
+            <div class="part">
+              【実験内容】<br>
+              これから、複数のWebページを順番に閲覧していただきます。<br>
+              複数のページ閲覧後に、内容に関する簡単な理解度テストやページの見えやすさ・読みやすさなどに関する主観的なアンケートに回答していただきます。
+            </div>
+            <div class="part">
+              【取得するデータ】<br>
+              ページ閲覧中には、画面上での操作に関するログ（スクロールの動き、ページの滞在時間など）を自動的に記録します。<br>
+              
+              アンケートでは以下の項目を取得します。<br>
+              ・年齢<br>
+              ・性別<br>
+              ・各ページの理解度テストの回答<br>
+              ・見えやすさ・読みやすさ・集中しやすさなどの主観的評価（7段階）<br>
+            </div>
+            <div class="part">
+              【データの扱い】<br>
+              上記は、ページの見え方や強調の仕方と閲覧行動との関係を分析するために使用します。<br>
+              取得したデータは卒業研究の分析にのみ使用し、個人が特定される形で外部に公開されることはありません。
+            </div>
+            <div class="part">
+              【画面の見え方に関するご案内】<br>
+              本実験のWebページは、教材デザインの検証のため、通常とは異なる配色やコントラストで表示される箇所があります。<br>
+              色の識別しやすさや読みやすさの感じ方には、個人の視覚特性やご利用の端末環境による個人差がありますが、本実験は参加者個人の視覚能力や特性を判定・測定するものでは一切ございません。 <br>
+              あらかじめ実験の特性としてご了承いただけますと幸いです。
+            </div>
+         
+            <div class="part">
+               上記の内容を理解し、参加に同意する場合は「同意する」を押してください。同意後、実験ページへ進みます。
+            </div>
+            
+            <button id="button" onclick="goToB1()">同意する</button>
+         </div>
+      </div>
+   </main>
+
+
+   <footer class="footer">
+      <div class="footer_inner">
+
+         <div class="footer_list">
+            <p class="footer_item">
+                  実験に関する質問とアンケートは、卒業研究でのみ使用させていただきます。
+            </p>
+         </div>
+
+      </div>
+   </footer>
+
+   <!-- js -->
+   <script src="./js/move.js"></script>
+   <script>localStorage.setItem("experimentPattern", "B");</script>
+
+</body>
+</html>
