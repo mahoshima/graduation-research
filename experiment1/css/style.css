@@ -11,6 +11,14 @@ html {
     font-family: 'Zen Old Mincho', 'Oswald', 'Noto Sans JP', 'sans-serif';
     overflow-y: scroll;
 }
+.finish-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.finish-page .finish-main {
+  flex: 1;
+}
 
 /* header */
 
