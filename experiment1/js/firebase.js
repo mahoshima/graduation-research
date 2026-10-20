@@ -52,9 +52,9 @@ function saveAndOpenForm() {
     localStorage.getItem("condition3Time"),
 
   // 基準速度
-  baselineSpeed:
-    localStorage.getItem("baselineSpeed"),
-
+  baselineCheck:
+  localStorage.getItem("baselineSpeed"),
+    
   check: "stepB"
 
 });
