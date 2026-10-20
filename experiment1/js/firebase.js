@@ -35,7 +35,7 @@ function saveAndOpenForm() {
 
   // 何秒後に強調が発生したか
   highlightTriggerTime:
-    localStorage.getItem("highlightTriggerTime"),
+    String(localStorage.getItem("highlightTriggerTime")),
     
   check: "stepD"
 
