@@ -54,6 +54,11 @@
             <p id="condition2Time"></p>
             <p id="condition3Time"></p>
          </div>
+
+         <div class="main_detail">
+            <p id="highlightTriggered"></p>
+            <p id="highlightTriggerTime"></p>
+         </div>
    
       </div>
    </main>
@@ -122,6 +127,22 @@
        "条件3滞在時間：" +
        localStorage.getItem("condition3Time") +
        " 秒";
+   </script>
+
+   <script>
+     const baselineSpeed = Number(localStorage.getItem("baselineSpeed"));
+     document.getElementById("baselineValue").textContent = baselineSpeed + " px/ms";
+   </script>
+
+   <script>
+     document.getElementById("highlightTriggered").textContent =
+  "強調発生：" +
+  localStorage.getItem("highlightTriggered");
+
+document.getElementById("highlightTriggerTime").textContent =
+  "強調発生時刻：" +
+  localStorage.getItem("highlightTriggerTime") +
+  " 秒";
    </script>
 
 </body>
