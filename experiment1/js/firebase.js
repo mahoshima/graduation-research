@@ -51,18 +51,6 @@ function saveAndOpenForm() {
   condition3Time:
     localStorage.getItem("condition3Time"),
 
-  // 基準速度
-  baselineSpeed:
-    localStorage.getItem("baselineSpeed"),
-
-  // 強調が発生したか
-  highlightTriggered:
-    localStorage.getItem("highlightTriggered"),
-
-  // 何秒後に強調が発生したか
-  highlightTriggerTime:
-    localStorage.getItem("highlightTriggerTime"),
-
   check: "stepA"
 
 });
