@@ -62,7 +62,7 @@ function saveAndOpenForm() {
   // highlightTriggerTime:
     // localStorage.getItem("highlightTriggerTime")
 
-});
+// });
 
   // Googleフォームを開く
   window.open(
