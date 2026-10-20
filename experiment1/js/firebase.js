@@ -9,11 +9,10 @@ const firebaseConfig = {
 };
 
 // Firebase初期化
-firebase.initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
 
 // Firestore取得
-const db = firebase.firestore();
-
+// const db = firebase.firestore();
 
 // Firebaseへ保存
 function sendLog(data) {
@@ -29,11 +28,11 @@ function sendLog(data) {
     });
 }
 
-
 // Googleフォームへ進むボタン用
 function saveAndOpenForm() {
 
-  alert("ボタン押された");
+  document.getElementById("testMessage").textContent =
+    "ボタンは押されました";
   // sendLog({
 
   // 被験者ID
@@ -66,7 +65,7 @@ function saveAndOpenForm() {
 
   // Googleフォームを開く
   window.open(
-    "https://docs.google.com/forms/d/e/1FAIpQLSdCMOrBz1KKCtj_ZEn_lxBmG4vn5MAKTve_lEHfmAeEVD6diA/viewform?usp=header",
+    "https://forms.gle/xeCUwH1k22md4jGA9",
     "_blank"
   );
 }
