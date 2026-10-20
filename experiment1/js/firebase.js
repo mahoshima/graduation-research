@@ -53,7 +53,7 @@ function saveAndOpenForm() {
 
   // 基準速度
   baselineCheck:
-  localStorage.getItem("baselineSpeed"),
+  String(localStorage.getItem("baselineSpeed")),
     
   check: "stepB"
 
