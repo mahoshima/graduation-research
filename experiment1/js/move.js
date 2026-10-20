@@ -26,7 +26,7 @@ function goToA3() {
 function goToB3() {
 
   const start = Number(
-    localStorage.getItem("condition2Start")
+    localStorage.getItem("condition3Start")
   );
 
   const elapsed =
