@@ -32,6 +32,9 @@ function sendLog(data) {
 function saveAndOpenForm() {
 
   sendLog({
+    participantId:
+      localStorage.getItem("participantId"),
+    
     "check": "maho"
 });
 
