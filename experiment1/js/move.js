@@ -41,5 +41,18 @@ function goToB3() {
 }
 
 function goTofinish() {
+
+  const start = Number(
+    localStorage.getItem("condition3Start")
+  );
+
+  const elapsed =
+    Math.round((Date.now() - start) / 1000);
+
+  localStorage.setItem(
+    "condition3Time",
+    elapsed
+  );
+  
   window.location.href = "./finish.html";
 }
