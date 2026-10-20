@@ -66,7 +66,7 @@ function saveAndOpenForm() {
 
   // Googleフォームを開く
   window.open(
-    "https://forms.gle/LcGRvHRuvUToE87u9",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdCMOrBz1KKCtj_ZEn_lxBmG4vn5MAKTve_lEHfmAeEVD6diA/viewform?usp=header",
     "_blank"
   );
 }
