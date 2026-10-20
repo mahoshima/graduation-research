@@ -1,11 +1,11 @@
 // Firebase SDK 読み込み（HTML側で CDN を読み込む前提）
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAdT49zjU6a27Ud5it1tnH9LubC50dYD6E",
+  authDomain: "graduation-research-b7223.firebaseapp.com",
+  projectId: "graduation-research-b7223",
+  storageBucket: "graduation-research-b7223.firebasestorage.app",
+  messagingSenderId: "131819979074",
+  appId: "1:131819979074:web:5c61ee7b7927c8fd2b48db"
 };
 
 // Firebase初期化
