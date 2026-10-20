@@ -25,6 +25,12 @@
          <div class="main_title">
             これで実験は終了です。Googleフォーム回答時に使用してください。
          </div>
+
+         <div class="main_detail">
+            <p id="participantIdDisplay"></p>
+            <p id="patternDisplay"></p>
+         </div>
+         
          <div class="main_detail">
             <p id="patternDisplay"></p>
          </div>
@@ -72,9 +78,31 @@
    <script src="./js/firebase.js"></script>
 
    <script>
-      const pattern = localStorage.getItem("experimentPattern");
+      // 被験者IDがまだ無ければ発行
+      if (!localStorage.getItem("participantId")) {
+   
+         const participantId =
+            "S" +
+            String(Math.floor(Math.random() * 1000))
+            .padStart(3, "0");
+   
+         localStorage.setItem(
+            "participantId",
+            participantId
+         );
+      }
+   
+      const participantId =
+         localStorage.getItem("participantId");
+   
+      const pattern =
+         localStorage.getItem("experimentPattern");
+   
+      document.getElementById("participantIdDisplay").textContent =
+         "被験者ID：" + participantId;
+   
       document.getElementById("patternDisplay").textContent =
-        "あなたの実験パターン：" + pattern;
+         "あなたの実験パターン：" + pattern;
    </script>
    
    <script>
