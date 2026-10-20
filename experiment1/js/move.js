@@ -42,17 +42,37 @@ function goToB3() {
 
 function goTofinish() {
 
-  const start = Number(
-    localStorage.getItem("condition3Start")
-  );
+  const pattern =
+    localStorage.getItem("experimentPattern");
 
-  const elapsed =
-    Math.round((Date.now() - start) / 1000);
+  if (pattern === "A") {
 
-  localStorage.setItem(
-    "condition3Time",
-    elapsed
-  );
-  
+    const start = Number(
+      localStorage.getItem("condition3Start")
+    );
+
+    const elapsed =
+      Math.round((Date.now() - start) / 1000);
+
+    localStorage.setItem(
+      "condition3Time",
+      elapsed
+    );
+
+  } else {
+
+    const start = Number(
+      localStorage.getItem("condition2Start")
+    );
+
+    const elapsed =
+      Math.round((Date.now() - start) / 1000);
+
+    localStorage.setItem(
+      "condition2Time",
+      elapsed
+    );
+  }
+
   window.location.href = "./finish.html";
 }
