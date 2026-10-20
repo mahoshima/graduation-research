@@ -53,8 +53,6 @@
          <div class="main_detail">
             <p id="highlightTriggered"></p>
             <p id="highlightTriggerTime"></p>
-
-            <!-- <p id="testMessage"></p> -->
          </div>
          
       </div>
@@ -81,8 +79,8 @@
    
          const participantId =
             "S" +
-            String(Math.floor(Math.random() * 1000))
-            .padStart(3, "0");
+            String(Math.floor(Math.random() * 10000))
+            .padStart(4, "0");
    
          localStorage.setItem(
             "participantId",
