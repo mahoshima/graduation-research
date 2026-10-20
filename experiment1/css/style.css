@@ -70,6 +70,9 @@ button {
     padding: 12px;
     width: 91%;
 }
+#finishbutton {
+    width: 78%;
+}
 
 /* footer */
 .footer {
