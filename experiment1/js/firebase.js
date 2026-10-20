@@ -33,11 +33,11 @@ function saveAndOpenForm() {
 
   sendLog({
 
-  // 強調が発生したか
-  highlightTriggered:
-    String(localStorage.getItem("highlightTriggered")),
+  // 何秒後に強調が発生したか
+  highlightTriggerTime:
+    localStorage.getItem("highlightTriggerTime"),
     
-  check: "stepC"
+  check: "stepD"
 
 });
 
