@@ -42,6 +42,15 @@
          <div class="main_detail">
             <p id="baselineValue"></p>
          </div>
+         
+         <div class="main_title">
+            滞在時間確認
+         </div>
+         <div class="main_detail">
+            <p id="condition1Time"></p>
+            <p id="condition2Time"></p>
+            <p id="condition3Time"></p>
+         </div>
    
       </div>
    </main>
@@ -59,17 +68,35 @@
    </footer>
    
    <!-- js -->
-   <script>
-     const baselineSpeed = Number(localStorage.getItem("baselineSpeed"));
-     document.getElementById("baselineValue").textContent = baselineSpeed + " px/ms";
-   </script>
-   
    <script src="./js/dynamicHighlight.js"></script>
    <script src="./js/firebase.js"></script>
+
    <script>
       const pattern = localStorage.getItem("experimentPattern");
       document.getElementById("patternDisplay").textContent =
         "あなたの実験パターン：" + pattern;
+   </script>
+   
+   <script>
+     const baselineSpeed = Number(localStorage.getItem("baselineSpeed"));
+     document.getElementById("baselineValue").textContent = baselineSpeed + " px/ms";
+   </script>
+
+   <script>
+     document.getElementById("condition1Time").textContent =
+       "条件1滞在時間：" +
+       localStorage.getItem("condition1Time") +
+       " 秒";
+   
+     document.getElementById("condition2Time").textContent =
+       "条件2滞在時間：" +
+       localStorage.getItem("condition2Time") +
+       " 秒";
+   
+     document.getElementById("condition3Time").textContent =
+       "条件3滞在時間：" +
+       localStorage.getItem("condition3Time") +
+       " 秒";
    </script>
 
 </body>
