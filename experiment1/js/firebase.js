@@ -9,10 +9,10 @@ const firebaseConfig = {
 };
 
 // Firebase初期化
-// firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 // Firestore取得
-// const db = firebase.firestore();
+const db = firebase.firestore();
 
 // Firebaseへ保存
 function sendLog(data) {
