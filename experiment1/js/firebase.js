@@ -54,8 +54,12 @@ function saveAndOpenForm() {
   // 基準速度
   baselineCheck:
   String(localStorage.getItem("baselineSpeed")),
+
+   // 強調が発生したか
+  highlightTriggered:
+    localStorage.getItem("highlightTriggered"),
     
-  check: "stepB"
+  check: "stepC"
 
 });
 
