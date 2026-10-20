@@ -32,37 +32,7 @@ function sendLog(data) {
 function saveAndOpenForm() {
 
   sendLog({
-
-  // 被験者ID
-  participantId:
-    localStorage.getItem("participantId"),
-
-  // 実験パターン
-  experimentPattern:
-    localStorage.getItem("experimentPattern"),
-
-  // 各条件の滞在時間
-  condition1Time:
-    localStorage.getItem("condition1Time"),
-
-  condition2Time:
-    localStorage.getItem("condition2Time"),
-
-  condition3Time:
-    localStorage.getItem("condition3Time"),
-
-  // 条件1で取得した基準速度
-  baselineSpeed:
-    localStorage.getItem("baselineSpeed"),
-
-  // 強調発生有無
-  highlightTriggered:
-    localStorage.getItem("highlightTriggered"),
-
-  // 強調発生時刻
-  highlightTriggerTime:
-    localStorage.getItem("highlightTriggerTime")
-
+    "check": "maho"
 });
 
   // Googleフォームを開く
