@@ -38,12 +38,28 @@ window.addEventListener("scroll", () => {
 
 function finishBaselineA() {
   finished = true;  // ← 追加：計測終了
+
+  // 条件1滞在時間
+  const start = Number(localStorage.getItem("condition1Start"));
+  const elapsed = Math.round((Date.now() - start) / 1000);
+
+  localStorage.setItem("condition1Time", elapsed);
+
+  // 条件1基準速度
   localStorage.setItem("baselineSpeed", baselineSpeed);
   location.href = "A-2.html";
 }
 
 function finishBaselineB() {
   finished = true;  // ← 追加：計測終了
+  
+  // 条件1滞在時間
+  const start = Number(localStorage.getItem("condition1Start"));
+  const elapsed = Math.round((Date.now() - start) / 1000);
+
+  localStorage.setItem("condition1Time", elapsed);
+
+  // 条件1基準速度
   localStorage.setItem("baselineSpeed", baselineSpeed);
   location.href = "B-2.html";
 }
