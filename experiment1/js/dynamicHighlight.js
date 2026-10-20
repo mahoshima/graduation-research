@@ -9,6 +9,9 @@ let lastTime = Date.now();
 //　一度でも赤くなったかを記録
 let isHighlighted = false;
 
+// 強調が発生したか
+let highlightTriggered = false;
+
 window.addEventListener("scroll", () => {
   // 既に赤くなっている場合は、これ以降の速度計算や判定をスキップ
   if (isHighlighted) return;
@@ -27,12 +30,33 @@ window.addEventListener("scroll", () => {
 
   // baseline より速くスクロールしたら赤にする
   if (speed > baseline) {
-    console.log("→ 赤にする判定が出た");  // ← 判定が出たか確認
-    document.querySelectorAll('.scroll-highlight').forEach(el => {
-      el.classList.add('active');
-    });
-    isHighlighted = true;
-  }
+  // 強調発生
+  highlightTriggered = true;
+  // localStorageに保存
+  localStorage.setItem(
+    "highlightTriggered",
+    "true"
+  );
+
+  // 条件3開始から何秒後に発生したか
+  const start =
+    Number(localStorage.getItem("condition3Start"));
+
+  const highlightTriggerTime =
+    Math.round((Date.now() - start) / 1000);
+
+  localStorage.setItem(
+    "highlightTriggerTime",
+    highlightTriggerTime
+  );
+
+  console.log("→ 赤にする判定が出た");
+    
+  document.querySelectorAll('.scroll-highlight').forEach(el => {
+    el.classList.add('active');
+  });
+  isHighlighted = true;
+}
 
   lastY = currentY;
   lastTime = now;
