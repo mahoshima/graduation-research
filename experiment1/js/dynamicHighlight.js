@@ -12,9 +12,6 @@ let isHighlighted = false;
 // 強調が発生したか
 let highlightTriggered = false;
 
-// 条件3の最大スクロール速度
-let condition3MaxSpeed = 0;
-
 window.addEventListener("scroll", () => {
   // 既に赤くなっている場合は、これ以降の速度計算や判定をスキップ
   if (isHighlighted) return;
@@ -30,16 +27,6 @@ window.addEventListener("scroll", () => {
   // px/ms のスクロール速度
   const speed = deltaY / deltaTime;
   console.log("speed:", speed);  // ← speed の値を確認
-
-  // 最大スクロール速度を更新
-  condition3MaxSpeed =
-    Math.max(condition3MaxSpeed, speed);
-  
-  // localStorageへ保存
-  localStorage.setItem(
-    "condition3MaxSpeed",
-    condition3MaxSpeed
-  );
 
   // baseline より速くスクロールしたら赤にする
   if (speed > baseline) {
