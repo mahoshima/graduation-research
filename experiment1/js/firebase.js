@@ -35,29 +35,37 @@ function saveAndOpenForm() {
 
   sendLog({
 
-    participantId:
-      localStorage.getItem("participantId"),
+  // 被験者ID
+  participantId:
+    localStorage.getItem("participantId"),
+  // 実験パターン
+  experimentPattern:
+    localStorage.getItem("experimentPattern"),
 
-    experimentPattern:
-      localStorage.getItem("experimentPattern"),
+  // 滞在時間
+  condition1Time:
+    localStorage.getItem("condition1Time"),
+  condition2Time:
+    localStorage.getItem("condition2Time"),
+  condition3Time:
+    localStorage.getItem("condition3Time"),
 
-    condition1Time:
-      localStorage.getItem("condition1Time"),
+  // 基準速度
+  baselineSpeed:
+    localStorage.getItem("baselineSpeed"),
 
-    condition2Time:
-      localStorage.getItem("condition2Time"),
+  // 強調が発生したか
+  highlightTriggered:
+    localStorage.getItem("highlightTriggered"),
+  // 何秒後に強調が発生したか
+  highlightTriggerTime:
+    localStorage.getItem("highlightTriggerTime")
 
-    condition3Time:
-      localStorage.getItem("condition3Time"),
-
-    baselineSpeed:
-      localStorage.getItem("baselineSpeed")
-
-  });
+});
 
   // Googleフォームを開く
   window.open(
-    "https://forms.gle/Vg9LYjgoJjBTpZ489",
+    "https://forms.gle/LcGRvHRuvUToE87u9",
     "_blank"
   );
 }
